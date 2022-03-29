@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Noto+Sans&display=swap');
+body{
+	margin: 10px 80px;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+nav {
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+nav h1{
+	font-family: 'Crimson Pro', serif;
+	font-size: 30px;
+}
+nav .onglets{
+	margin-top: 35px;
+}
+nav .onglets a{
+	text-decoration: none;
+	color: #7f7e7e;
+	margin-right: 50px;
+}
+
+.articles{
+	margin-top: 30px;
+}
+.articles .article{
+	display: flex;
+	flex-wrap:wrap;
+	margin-bottom:30px;
+}
+.articles .article .left img{
+	height: 600px;
+	width: 400px;
+}
+.articles .article .right{
+	 max-width: 100%;
+	 margin-left: 100px;
+}
+.articles .article .right p.date{
+	color: #7f7e7e;
+}
+.articles .article .right p.description{
+	color: #2d2d2d;
+}
+.diagrammes .gantt img{
+	height: 400px;
+	width: 1600px;
+}
+ /* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #a1caf1
+;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+} 
+
+footer{
+	margin-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	color: #494949;
+}
+footer h2{
+	font-size: 20px;
+	font-family: 'Crimson Pro', serif;
+}
+footer .social-media{
+	display:flex;
+}
+footer .social-media p{
+	font-size: 18px;
+	margin-right: 20px;
+}
+@media screen and (max-width:640px){      <!--pour mobile-->
+	body {
+		margin: 10px 20px;
+	}
+	nav .onglets{
+		margin-top: -10px;
+	}
+	.articles .article .left img{
+		height: 100%;
+		width: 100%;
+	}
+	.articles .article .right{
+		margin: 0;
+		max-width: 100%;
+	}
+	footer .social-media{
+		margin-top: -20px;
+	}
+}
